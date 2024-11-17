@@ -1,0 +1,468 @@
+USE students;
+
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Insert data into the Student table
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Chase', 'Simao', 21, 'Computer Science'); -- student id 1
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Kush', 'Patel', 21, 'Computer Science'); -- student id 2
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Robert', 'Robertson', 25, 'History'); -- student id 3
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('John', 'Smith', 20, 'Biology'); -- student id 4
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Jane', 'Doe', 22, 'Biochemistry'); -- student id 5
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Sarah', 'Connor', 23, 'Physics'); -- student id 6
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('James', 'Cameron', 21, 'Art'); -- student id 7
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Laura', 'Croft', 22, 'History'); -- student id 8
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Peter', 'Mason', 20, 'Mathematics'); -- student id 9
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Mary', 'Davis', 21, 'Computer Science'); -- student id 10
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Bruce', 'Adams', 22, 'Engineering'); -- student id 11
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Clark', 'Johnson', 24, 'Health and Medicine'); -- student id 12
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Diana', 'Peters', 23, 'Philosophy'); -- student id 13
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Tony', 'Harris', 25, 'Engineering'); -- student id 14
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Steve', 'Rogers', 20, 'History'); -- student id 15
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Natasha', 'Romanoff', 22, 'Physics'); -- student id 16
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Wanda', 'Maxwell', 21, 'Psychology'); -- student id 17
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Bruce', 'Bannister', 24, 'Biology'); -- student id 18
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('David', 'Thompson', 23, 'Health and Medicine'); -- student id 19
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Lisa', 'Clark', 22, 'Arts and Humanities'); -- student id 20
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Peter', 'Quinn', 21, 'Natural Sciences'); -- student id 21
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Anna', 'Green', 20, 'Biochemistry'); -- student id 22
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Jack', 'Brown', 23, 'Botany'); -- student id 23
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Eric', 'Miller', 24, 'Engineering'); -- student id 24
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Stephen', 'Stone', 25, 'Health and Medicine'); -- student id 25
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Wade', 'Wilson', 22, 'Marketing'); -- student id 26
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Matt', 'Murphy', 24, 'Law'); -- student id 27
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Jessica', 'Jones', 23, 'Criminal Justice'); -- student id 28
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Luke', 'Parker', 20, 'Education'); -- student id 29
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Danny', 'Rand', 21, 'Business Administration'); -- student id 30
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Jean', 'Grey', 22, 'Psychology'); -- student id 31
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Scott', 'Summers', 23, 'Education'); -- student id 32
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Ororo', 'Munroe', 21, 'Natural Sciences'); -- student id 33
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Logan', 'Howlett', 25, 'History'); -- student id 34
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Charles', 'Xavier', 24, 'Philosophy'); -- student id 35
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Erik', 'Lehnsherr', 22, 'Physics'); -- student id 36
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Raven', 'Smith', 23, 'Sociology'); -- student id 37
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Hank', 'McCoy', 21, 'Biochemistry'); -- student id 38
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Kitty', 'Pryde', 22, 'Computer Science'); -- student id 39
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Kurt', 'Wagner', 20, 'Arts and Humanities'); -- student id 40
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Warren', 'Worthington', 23, 'Business Administration'); -- student id 41
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Anna', 'Marie', 21, 'Nursing'); -- student id 42
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Remy', 'LeBeau', 24, 'Criminal Justice'); -- student id 43
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Piotr', 'Rasputin', 22, 'Arts and Humanities'); -- student id 44
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Betsy', 'Braddock', 23, 'Psychology'); -- student id 45
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Emma', 'Frost', 21, 'Education'); -- student id 46
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Sam', 'Guthrie', 24, 'Engineering'); -- student id 47
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Roberto', 'da Costa', 22, 'International Relations'); -- student id 48
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Amara', 'Aquilla', 21, 'Geology'); -- student id 49
+INSERT INTO Student (FirstName, LastName, Age, Major) VALUES ('Danielle', 'Moonstar', 23, 'Anthropology'); -- student id 50
+
+
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Insert data into the Department table
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Computer Science', 'Dr. Seikyung Jung'); -- department id 1
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Mathematics', 'Dr. Katherine Bramen'); -- department id 2
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('History', 'Dr. George Lucas'); -- department id 3
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Engineering', 'Dr. Henry Ford'); -- department id 4
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Health and Medicine', 'Dr. Alexander Fleming'); -- department id 5
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Arts and Humanities', 'Dr. Socrates Aeschines'); -- department id 6
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Natural Sciences', 'Dr. Scarlett Howard'); -- department id 7
+INSERT INTO Department (DepartmentName, DepartmentHead) VALUES ('Education', 'Dr. Hannah Rivera'); -- department id 8
+
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Insert data into the Professor table
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO Professor (FirstName, LastName) VALUES ('Seikyung', 'Jung'); -- professor id 1 (Department Head Computer Science)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Katherine', 'Bramen'); -- professor id 2 (Department Head Mathematics)
+INSERT INTO Professor (FirstName, LastName) VALUES ('George', 'Lucas'); -- professor id 3 (Department Head History)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Linus', 'TechTips'); -- professor id 4 Computer Science
+INSERT INTO Professor (FirstName, LastName) VALUES ('Jake', 'Paul'); -- professor id 5 Health and Medicine
+INSERT INTO Professor (FirstName, LastName) VALUES ('Mike', 'Tyson'); -- professor id 6 Arts and Humanities 
+INSERT INTO Professor (FirstName, LastName) VALUES ('Julius', 'Caesar'); -- professor id 7 History
+INSERT INTO Professor (FirstName, LastName) VALUES ('Socrates', 'Aeschines'); -- professor id 8 (Department Head Health And Medicine)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Henry', 'Ford'); -- professor id 9 (Department Head Engineering)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Alexander', 'Fleming'); -- professor id 10 (Department Head Health and Medicine)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Ava', 'White'); -- professor id 11 Natural Science
+INSERT INTO Professor (FirstName, LastName) VALUES ('Mason', 'Clark'); -- professor id 12 Education
+INSERT INTO Professor (FirstName, LastName) VALUES ('Hazel', 'Allen'); -- professor id 13 Engineering
+INSERT INTO Professor (FirstName, LastName) VALUES ('Wyatt', 'Baker'); -- professor id 14 Mathematics
+INSERT INTO Professor (FirstName, LastName) VALUES ('Edward', 'Edwards'); -- professor id 15 Education
+INSERT INTO Professor (FirstName, LastName) VALUES ('John', 'Johnstone'); -- professor id 16 Engineering
+INSERT INTO Professor (FirstName, LastName) VALUES ('Stella', 'Peterson'); -- professor id 17 Health and Medicine
+INSERT INTO Professor (FirstName, LastName) VALUES ('Nathan', 'Myers'); -- professor id 18 Mathematics
+INSERT INTO Professor (FirstName, LastName) VALUES ('Levi', 'Cook'); -- professor id 19 Natural Science
+INSERT INTO Professor (FirstName, LastName) VALUES ('Caleb', 'Turner'); -- professor id 20 Computer Science
+INSERT INTO Professor (FirstName, LastName) VALUES ('Nora', 'Henderson'); -- professor id 21 Arts and Humanities
+INSERT INTO Professor (FirstName, LastName) VALUES ('Scarlett', 'Howard'); -- professor id 22 (Department Head Natural Sciences)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Ryan', 'Flores'); -- professor id 23 Education
+INSERT INTO Professor (FirstName, LastName) VALUES ('Hannah', 'Rivera'); -- professor id 24 (Department Head Education)
+INSERT INTO Professor (FirstName, LastName) VALUES ('Evelyn', 'Ross'); -- professor id 25 Computer Science
+
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Insert data into the Course table
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Seikyung Jung (1)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Introduction Database Systems', 3, 1, 1); -- 3 credits,  Computer Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Computer Science I', 3, 1, 1); -- 3 credits,  Computer Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Web Application Development', 3, 1, 1); -- 3 credits,  Computer Science
+
+-- Katherine Bramen (2)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Calculus I', 4, 2, 2); -- 4 credits, Mathematics
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Calculus II', 4, 2, 2); -- 4 credits, Mathematics
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Calculus III', 4, 2, 2); -- 4 credits, Mathematics
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Pre-Calc', 3, 2, 2); -- 3 credits, Mathematics
+
+-- George Lucas (3)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('World History', 3, 3, 3); -- 3 credits, History
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('History of World War I', 3, 3, 3); -- 3 credits, History
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('History of World War II', 3, 3, 3); -- 3 credits, History
+
+-- Linus TechTips (4)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Operating Systems', 3, 1, 4); -- 3 credits,  Computer Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Computer Architecture', 3, 1, 4); -- 3 credits,  Computer Science
+
+-- Jake Paul (5) 
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Medical Ethics', 3, 5, 5); -- 3 credits, Health and Medicine
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Pharmacology', 4, 5, 5); -- 4 credits, Health and Medicine
+
+-- Mike Tyson (6)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Creative Writing', 3, 6, 6); -- 3 credits, Arts and Humanities
+
+-- Julius Caesar (7)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Roman History', 3, 3, 7); -- 3 credits, History
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Greek History', 3, 3, 7); -- 3 credits, History
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Egyptian History', 3, 3, 7); -- 3 credits, History
+
+-- Socrates Aeschines (8)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Philosophy of Mind', 3, 6, 8); -- 3 credits, Arts and Humanities
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Ancient Philosophy', 3, 6, 8); -- 3 credits, Arts and Humanities
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Philosophy of Science', 3, 6, 8); -- 3 credits, Arts and Humanities
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Political Philosophy', 3, 6, 8); -- 3 credits, Arts and Humanities
+
+-- Henry Ford (9)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Machine Design', 4, 4, 9); -- 4 credits, Engineering
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Heat Transfer', 3, 4, 9); -- 3 credits, Engineering
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Manufacturing', 4, 4, 9); -- 4 credits, Engineering
+
+-- Alexander Fleming (10)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Global Health', 4, 5, 10); -- 4 credits, Health and Medicine
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Telemedicine', 3, 5, 10); -- 3 credits, Health and Medicine
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Introduction to Orthopedics', 4, 5, 10); -- 4 credits, Health and Medicine
+
+-- Ava White (11)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Biology I', 4, 7, 11); -- 4 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Biology II', 4, 7, 11); -- 4 credits, Natural Science
+
+-- Mason Clark (12)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Introduction to Education', 4, 8, 12); -- 3 credits, Education
+
+-- Hazel Allen (13)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Control Systems', 3, 4, 13); -- 3 credits, Engineering
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Power Systems', 3, 4, 13); -- 3 credits, Engineering
+
+-- Wyatt Baker (14)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Statistics I', 3, 2, 14); -- 3 credits, Mathematics
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Statistics II', 3, 2, 14); -- 3 credits, Mathematics
+
+-- Edward Edwards (15)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Classroom Management', 4, 8, 15); -- 4 credits, Education
+
+-- John Johnstone (16)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Thermodynamics', 4, 4, 16); -- 4 credits, Engineering
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Process Design', 3, 4, 16); -- 3 credits, Engineering
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Chemical Reaction Engineering', 4, 4, 16); -- 4 credits, Engineering
+
+-- Stella Peterson (17)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Public Health', 3, 5, 17); -- 3 credits, Health and Medicine
+
+-- Nathan Meyers (18)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Discrete Math', 3, 2, 18); -- 3 credits, Mathematics
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Linear Algebra', 3, 2, 18); -- 3 credits, Mathematics
+
+-- Levi Cook (19) 
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Chemistry I', 4, 7, 19); -- 4 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Chemistry II', 4, 7, 19); -- 4 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Biochemistry', 4, 7, 19); -- 4 credits, Natural Science
+
+-- Caleb Turner (20)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Cloud Computing', 3, 1, 20); -- 3 credits, Computer Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Mobile App Development', 3, 1, 20); -- 3 credits, Computer Science
+
+-- Nora Henderson (21)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Art Studio', 3, 6, 21); -- 3 credits, Arts and Humanities
+
+-- Scarlett Howard (22)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Genetics', 4, 7, 22); -- 4 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Microbiology', 4, 7, 22); -- 4 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Ecology', 3, 7, 22); -- 3 credits, Natural Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Botany', 3, 7, 22); -- 3 credits, Natural Science
+
+-- Ryan Flores (23)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Educational Leadership', 3, 8, 23); -- 3 credits, Education
+
+-- Hannah Rivera (24) 
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Instructional Strategies', 3, 8, 24); -- 3 credits, Education
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Curriculum Development', 3, 8, 24); -- 3 credits, Education
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Education Policy', 3, 8, 24); -- 3 credits, Education
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Philosophy of Education', 3, 8, 24); -- 3 credits, Education
+
+-- Evelyn Ross (25)
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Computer Forensics', 3, 1, 25); -- 3 credits, Computer Science
+INSERT INTO Course (CourseName, Credits, DepartmentId, ProfessorId) VALUES ('Introduction to Cybersecurity', 3, 1, 25); -- 3 credits, Computer Science
+
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Insert data into the Enrollment table
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- Chase Simao (Computer Science)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (1, 1, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (1, 2, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (1, 3, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (1, 26, 'B');
+
+-- Kush Patel (Computer Science)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (2, 1, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (2, 2, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (2, 4, 'C');
+
+-- Robert Robertson (History)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (3, 8, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (3, 9, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (3, 10, 'A');
+
+-- John Smith (Biology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (4, 32, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (4, 33, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (4, 34, 'A');
+
+-- Jane Doe (Biochemistry)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (5, 48, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (5, 49, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (5, 50, 'A');
+
+-- Sarah Connor (Physics)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (6, 16, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (6, 29, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (6, 37, 'A');
+
+-- James Cameron (Art)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (7, 21, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (7, 55, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (7, 56, 'A');
+
+-- Laura Croft (History)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (8, 13, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (8, 14, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (8, 15, 'A');
+
+-- Peter Mason (Mathematics)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (9, 5, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (9, 6, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (9, 7, 'A');
+
+-- Mary Davis (Computer Science)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (10, 1, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (10, 2, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (10, 4, 'C');
+
+-- Bruce Adams (Engineering)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (11, 17, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (11, 18, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (11, 19, 'A');
+
+-- Clark Johnson (Health and Medicine)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (12, 41, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (12, 42, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (12, 45, 'A');
+
+-- Diana Peters (Philosophy)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (13, 21, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (13, 22, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (13, 23, 'A');
+
+-- Tony Harris (Engineering)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (14, 17, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (14, 18, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (14, 19, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (14, 26, 'A');
+
+-- Steve Rogers (History)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (15, 8, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (15, 9, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (15, 10, 'A');
+
+-- Natasha Romanoff (Physics)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (16, 16, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (16, 29, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (16, 37, 'A');
+
+-- Wanda Maxwell (Psychology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (17, 30, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (17, 31, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (17, 32, 'A');
+
+-- Bruce Bannister (Biology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (18, 32, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (18, 33, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (18, 34, 'A');
+
+-- David Thompson (Health and Medicine)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (19, 46, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (19, 47, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (19, 48, 'B');
+
+-- Lisa Clark (Arts and Humanities)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (20, 55, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (20, 56, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (20, 57, 'A');
+
+-- Peter Quinn (Natural Sciences)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (21, 48, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (21, 49, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (21, 50, 'A');
+
+-- Anna Green (Biochemistry)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (22, 40, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (22, 41, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (22, 42, 'A');
+
+-- Jack Brown (Botany)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (23, 52, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (23, 55, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (23, 56, 'A');
+
+-- Eric Miller (Engineering)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (24, 17, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (24, 18, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (24, 19, 'A');
+
+-- Stephen Stone (Health and Medicine)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (25, 45, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (25, 46, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (25, 47, 'A');
+
+-- Wade Wilson (Marketing)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (26, 41, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (26, 46, 'A');
+
+-- Matt Murphy (Law)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (27, 45, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (27, 46, 'B');
+
+-- Jessica Jones (Criminal Justice)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (28, 43, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (28, 44, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (28, 25, 'A');
+
+-- Luke Parker (Education)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (29, 38, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (29, 39, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (29, 40, 'A');
+
+-- Danny Rand (Business Administration)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (30, 23, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (30, 27, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (30, 19, 'A');
+
+-- Jean Grey (Psychology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (31, 30, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (31, 31, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (31, 32, 'A');
+
+-- Scott Summers (Education)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (32, 38, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (32, 39, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (32, 40, 'A');
+
+-- Ororo Munroe (Natural Sciences)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (33, 22, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (33, 23, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (33, 34, 'A');
+
+-- Logan Howlett (History)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (34, 13, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (34, 14, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (34, 15, 'A');
+
+-- Charles Xavier (Philosophy)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (35, 21, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (35, 22, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (35, 23, 'A');
+
+-- Erik Lehnsherr (Physics)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (36, 16, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (36, 29, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (36, 37, 'A');
+
+-- Raven Smith (Sociology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (37, 38, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (37, 39, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (37, 40, 'A');
+
+-- Hank McCoy (Biochemistry)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (38, 48, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (38, 49, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (38, 50, 'A');
+
+-- Kitty Pryde (Computer Science)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (39, 1, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (39, 2, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (39, 3, 'A');
+
+-- Kurt Wagner (Arts and Humanities)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (40, 55, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (40, 56, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (40, 57, 'A');
+
+-- Warren Worthington (Business Administration)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (41, 12, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (41, 27, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (41, 15, 'A');
+
+-- Anna Marie (Nursing)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (42, 45, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (42, 46, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (42, 47, 'A');
+
+-- Remy LeBeau (Criminal Justice)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (43, 43, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (43, 44, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (43, 25, 'A');
+
+-- Piotr Rasputin (Arts and Humanities)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (44, 55, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (44, 56, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (44, 57, 'A');
+
+-- Betsy Braddock (Psychology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (45, 30, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (45, 31, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (45, 32, 'A');
+
+-- Emma Frost (Education)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (46, 38, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (46, 39, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (46, 40, 'A');
+
+-- Sam Guthrie (Engineering)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (47, 17, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (47, 18, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (47, 19, 'A');
+
+-- Roberto da Costa (International Relations)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (48, 13, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (48, 14, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (48, 15, 'A');
+
+-- Amara Aquilla (Geology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (49, 19, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (49, 22, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (49, 34, 'A');
+
+-- Danielle Moonstar (Anthropology)
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (50, 32, 'A');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (50, 33, 'B');
+INSERT INTO Enrollment (StudentId, CourseId, Grade) VALUES (50, 34, 'A');
+
+
+
+
+
+
