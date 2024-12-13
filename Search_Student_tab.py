@@ -28,8 +28,12 @@ class Search_Student:
 
         # Create and place the search button
         search_button = tk.Button(frame_search, text="Search", command=lambda: Search_Student.search_student(self))
-        search_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
+        search_button.grid(row=2, column=1, columnspan=2, padx=10, pady=10, sticky='w')
 
+        # Create and place the Update Grade button
+        update_button = tk.Button(frame_search, text="Update Grade", command=lambda: Search_Student.update_grade(self))
+        update_button.grid(row=2, column=1, columnspan=2, padx=10, pady=10)
+        
         # Create a frame for the Text widget and scrollbars
         frame_result = tk.Frame(frame_search)
         frame_result.grid(row=3, column=0, columnspan=2, padx=10, pady=10, sticky="nsew")
@@ -71,7 +75,7 @@ class Search_Student:
         cursor = conn.cursor()
         student_info = Utility.get_student_info_by_name(cursor, first_name, last_name)
         conn.close()
-
+        #TODO: Multiple Students can be returned here
         if student_info:
             result_text = self.result_text
             result_text.config(state=tk.NORMAL)
@@ -82,3 +86,65 @@ class Search_Student:
             result_text.config(state=tk.DISABLED)
         else:
             messagebox.showinfo("No Results", "No student found with the given name.")
+            
+    def update_grade(self):
+        result_text = self.result_text
+        first_name = self.entry_first_name.get()
+        last_name = self.entry_last_name.get()
+        if not first_name or not last_name:
+            messagebox.showwarning("Input Error", "Please enter both first and last names.")
+            return
+        
+        conn = sqlite3.connect('University.db')
+        cursor = conn.cursor()
+        student_info = Utility.get_student_info_by_name_v2(cursor, first_name, last_name)
+        if not student_info:
+            messagebox.showinfo("No Results", "No student found with the given name.")
+            conn.close()
+            return 
+        #If only 1 student is returned from name search then that is the student we want
+        if len(student_info) > 1:
+             # Get input for major
+            messagebox.showinfo("Too Many Students", f"We found more than one student with same name. Please enter student id and choose a student.")
+            student_ID = simpledialog.askinteger("Input", "Enter Student ID:")
+            if student_ID is None:  # User pressed Cancel
+                conn.close()
+                return
+        else:
+            student_ID = student_info[0][0]
+        
+        course_id = simpledialog.askinteger("Input", "Enter Course ID:")
+        course_info = Utility.get_course_info_by_course_id(cursor, course_id)
+        if course_id is None:
+            messagebox.showerror("Error", f"Please insert course id of the course you want to update grade for.")
+            conn.close()
+            return
+        #check if given course id does not exist
+        if not course_info:
+            messagebox.showerror("Error", f"Course could not be found please enter a valid Course ID.")
+            conn.close()
+            return
+        #check if student is already enrolled in given course
+        if Utility.is_student_enrolled(cursor, student_ID, course_id):
+            new_grade = simpledialog.askstring("Input", "Enter new Grade:")
+            #Check if given grade is in correct formate
+            if new_grade is None:
+                messagebox.showerror("Error", f"Please insert a grade.")
+                conn.close()
+                return 
+            if (not new_grade in ["N/A", "A-", "A", "A+", "B-", "B", "B+", "C-", "C", "C+","D-", "D", "D+", "F"]):
+                messagebox.showerror("Error",f"Given grade is not valid. Please choose from the following valid grades:\nN/A, A-, A, A+, B-, B, B+, C-, C, C+, D- , D , D+, F")
+                conn.close()
+                return
+            Utility.update_student_grade(student_id=student_ID, course_id=course_id, new_grade=new_grade)
+            result_text.config(state=tk.NORMAL)
+            result_text.delete('1.0', tk.END)
+            result_text.insert(tk.END, f"{first_name} {last_name}'s grade in {course_info[0][1]} is updated to {new_grade}\n")
+            result_text.config(state=tk.DISABLED)
+        else:
+            messagebox.showerror("Error", f"Student is not enrolled in {course_info[0][1]}!")
+            conn.close()
+            return
+            
+        
+        

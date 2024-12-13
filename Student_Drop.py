@@ -7,7 +7,7 @@ import Utility
 class Remove_Student:
     def __init__(self, notebook):
         self.frame_drop_student = ttk.Frame(notebook)
-        notebook.add(self.frame_drop_student, text="Drop Student")
+        notebook.add(self.frame_drop_student, text="Student Drop")
 
         # Dropdown options
         self.options = ["University", "Course"]

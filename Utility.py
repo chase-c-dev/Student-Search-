@@ -15,6 +15,12 @@ def insert_student_in_university(student_id, f_name, l_name, age, major):
     conn.commit() 
     conn.close()
     
+def update_student_grade(student_id, course_id, new_grade):
+    conn = sqlite3.connect('University.db') 
+    cursor = conn.cursor() 
+    cursor.execute("UPDATE Enrollment SET grade = ? WHERE StudentId = ? AND CourseId = ?;", (new_grade, student_id, course_id)) 
+    conn.commit() 
+    conn.close()
 
 def remove_student_from_course(student_id, course_id):
     try:
@@ -46,6 +52,14 @@ def get_student_info_by_name(cursor, first_name, last_name):
     LEFT JOIN Enrollment ON Student.StudentId = Enrollment.StudentId
     LEFT JOIN Course ON Enrollment.CourseId = Course.CourseId
     LEFT JOIN Professor ON Course.ProfessorId = Professor.ProfessorId
+    WHERE Student.FirstName = ? AND Student.LastName = ?
+    """, (first_name, last_name))
+    return cursor.fetchall()
+
+def get_student_info_by_name_v2(cursor, first_name, last_name):
+    cursor.execute("""
+    SELECT *
+    FROM Student
     WHERE Student.FirstName = ? AND Student.LastName = ?
     """, (first_name, last_name))
     return cursor.fetchall()
