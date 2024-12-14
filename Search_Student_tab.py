@@ -3,12 +3,12 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 from tkinter import simpledialog
 import Utility
+
 class Search_Student:
     def __init__(self):
         self.entry_last_name = None
         self.entry_first_name = None
         self.result_text = None
-    
     
     def search(self, notebook):
         # Create the first tab for searching student information by name
@@ -80,7 +80,7 @@ class Search_Student:
             result_text = self.result_text
             result_text.config(state=tk.NORMAL)
             result_text.delete('1.0', tk.END)
-            result_text.insert(tk.END, f"Student ID: {student_info[0][0]}\nFirst Name: {student_info[0][1]}\nLast Name: {student_info[0][2]}\nAge: {student_info[0][3]}\nMajor: {student_info[0][4]}\n\n")
+            result_text.insert(tk.END, f"Student ID: {student_info[0][0]}\nFirst Name: {student_info[0][1]}\nLast Name: {student_info[0][2]}\nEnrollment Age: {student_info[0][3]}\nMajor: {student_info[0][4]}\n\n")
             for row in student_info:
                 result_text.insert(tk.END, f"EnrollmentID: {row[10]}\nCourseID: {row[9]}\nCourse: {row[5]}\nGrade: {row[6]}\nInstructor: {row[7]} {row[8]}\n\n")
             result_text.config(state=tk.DISABLED)
