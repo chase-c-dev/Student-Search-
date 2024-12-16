@@ -75,7 +75,6 @@ class Search_Student:
         cursor = conn.cursor()
         student_info = Utility.get_student_info_by_name(cursor, first_name, last_name)
         conn.close()
-        #TODO: Multiple Students can be returned here
         if student_info:
             result_text = self.result_text
             result_text.config(state=tk.NORMAL)

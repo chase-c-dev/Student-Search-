@@ -156,7 +156,7 @@ class Enroll_Student:
             return
 
         # Get input for age
-        age = simpledialog.askinteger("Input", "Enter Age:")
+        age = simpledialog.askinteger("Input", "Enter Age at Enrollment:")
         if age is None:  # User pressed Cancel
             return
 

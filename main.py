@@ -5,7 +5,7 @@ import Enroll_Student_tab
 import Search_Student_tab
 import Display_All_Students
 import Student_Drop
-#TODO: TELL CHASE TO REMOVE AGE and replace it with birthday from Proejct Schema for final submission.
+
 def load_sql_file(cursor, sql_file_path):
     with open(sql_file_path, 'r') as sql_file:
         sql_script = sql_file.read()
