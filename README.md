@@ -1,4 +1,7 @@
 # Student-Search
+
+Completed in a group with https://github.com/kushpatel7764
+
 Project uses a GUI and a database. Allows users to search up students and view information related to that student via a GUI.
 
 
